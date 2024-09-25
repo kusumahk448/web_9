@@ -1,13 +1,16 @@
-// src/App.js
 import React from 'react';
-import ImageFetcher from './Imagefetcher';
+import Imagefetcher from './Imagefetcher'; // Adjust the path as necessary
+import Login from './Login'; // Adjust the path as necessary
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <ImageFetcher />
+    <div>
+      <Login />
+      <div className="image-container">
+        <Imagefetcher />
+      </div>
     </div>
   );
-}
+};
 
 export default App;

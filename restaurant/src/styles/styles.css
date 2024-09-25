@@ -1,0 +1,101 @@
+/* General body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background-color: #f4f4f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* Center elements horizontally */
+  justify-content: center; /* Center elements vertically */
+  height: 100vh; /* Make the body full height */
+}
+
+/* Container for the form */
+.form-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 300px;
+  max-width: 100%;
+  margin-bottom: 20px; /* Add space below the form */
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow images to wrap to the next line */
+  justify-content: center; /* Center images */
+  gap: 10px; /* Space between images */
+}
+
+/* Image styling */
+.image-container img {
+  max-width: 150px; /* Set max width for images */
+  border-radius: 4px; /* Optional: add rounded corners */
+}
+
+/* Heading for the form */
+.form-container h2 {
+  text-align: center;
+  color: #333333;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+/* Input fields styling */
+.form-container input[type="text"],
+.form-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #fafafa;
+  box-sizing: border-box;
+}
+
+/* Add margin for spacing between input fields */
+.form-container input[type="text"] {
+  margin-bottom: 20px; /* Adds space between username and password fields */
+}
+
+/* Focus effect for inputs */
+.form-container input[type="text"]:focus,
+.form-container input[type="password"]:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+/* Submit button styling */
+.form-container button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px; /* Adds space between password field and submit button */
+}
+
+/* Hover effect for the submit button */
+.form-container button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for error or info messages */
+.form-container .message {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #ff4d4d; /* Change color for success or error messages */
+}
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+  .form-container {
+    padding: 20px;
+  }
+}
